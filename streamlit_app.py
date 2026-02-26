@@ -36,9 +36,9 @@ APP_DIR = Path(__file__).resolve().parent
 CHROMA_DIR = os.getenv("CHROMA_DIR", str(APP_DIR / "chroma_uabc_ai_v9"))
 
 DEFAULT_COLAB_PDFS = [
-    "/content/Boletin1_IA_2024-01-19.pdf",
-    "/content/IA_Practica_Docente_2024-01-24.pdf",
-    "/content/Incorporacion_IA_Procesos_de_Investigacion_2024-06-12-6.pdf",
+    "/data_files/Boletin1_IA_2024-01-19.pdf",
+    "/data_files/IA_Practica_Docente_2024-01-24.pdf",
+    "/data_files/Incorporacion_IA_Procesos_de_Investigacion_2024-06-12-6.pdf",
 ]
 
 
