@@ -1,6 +1,6 @@
 """
 UABC AI Assistant - Streamlit Dashboard (v9)
-Module 17: Feedback Submit Button & Confirmation
+Module 18: Feedback Submit Button & Confirmation
 
 Changes from v8 (feedback UX only — all other sections identical):
 - Added "Send Comment" button in Rate Last Response section
@@ -775,7 +775,7 @@ def page_monitoring():
         st.plotly_chart(fig, use_container_width=True)
 
     st.divider()
-    st.subheader("Module 17 Success Checklist")
+    st.subheader("Module 18 Success Checklist")
     queries = m['query_count']
     has_fb = m['total_feedback'] > 0
     avg_lat = m['avg_response_time']
@@ -947,7 +947,7 @@ def main():
                 f'</div>',
                 unsafe_allow_html=True)
         st.markdown("### 🎓 UABC AI Assistant")
-        st.caption("Module 17 — v9")
+        st.caption("Module 18 — v9")
         page = st.radio(
             "Navigation",
             ["💬 Chat", "🔍 Explainability", "📊 Feedback", "📈 Monitoring", "📚 Docs"],
