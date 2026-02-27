@@ -935,7 +935,7 @@ def main():
         # UABC Logo — look for uabc_logo.png next to the app or in /content/
         logo_candidates = [
             APP_DIR / "uabc_logo.png",
-            Path("/content/uabc_logo.png"),
+            Path("/uabc_logo.png"),
         ]
         logo_path = next((p for p in logo_candidates if p.exists()), None)
         if logo_path:
