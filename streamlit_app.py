@@ -35,10 +35,16 @@ from langchain_core.output_parsers import StrOutputParser
 APP_DIR = Path(__file__).resolve().parent
 CHROMA_DIR = os.getenv("CHROMA_DIR", str(APP_DIR / "chroma_uabc_ai_v9"))
 
+#DEFAULT_COLAB_PDFS = [
+#    "/data_files/Boletin1_IA_2024-01-19.pdf",
+#    "/data_files/IA_Practica_Docente_2024-01-24.pdf",
+#    "/data_files/Incorporacion_IA_Procesos_de_Investigacion_2024-06-12-6.pdf",
+#]
+
 DEFAULT_COLAB_PDFS = [
-    "/data_files/Boletin1_IA_2024-01-19.pdf",
-    "/data_files/IA_Practica_Docente_2024-01-24.pdf",
-    "/data_files/Incorporacion_IA_Procesos_de_Investigacion_2024-06-12-6.pdf",
+    str(APP_DIR / "data_files" / "Boletin1_IA_2024-01-19.pdf"),
+    str(APP_DIR / "data_files" / "IA_Practica_Docente_2024-01-24.pdf"),
+    str(APP_DIR / "data_files" / "Incorporacion_IA_Procesos_de_Investigacion_2024-06-12-6.pdf"),
 ]
 
 
@@ -48,6 +54,7 @@ def resolve_pdf_paths() -> List[str]:
         return [p.strip() for p in env_paths.split(",") if p.strip()]
     local_candidates = []
     local_dirs = [
+        APP_DIR / "data_files", 
         APP_DIR / "Modulo_16_17_18" / "Archivos IA Uni",
         APP_DIR / "Archivos IA Uni",
     ]
