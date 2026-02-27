@@ -55,7 +55,7 @@ pip install -r requirements_v9.txt
 export OPENAI_API_KEY="your-key-here"
 ```
 
-## Running the App
+## Running the App 
 
 ### Google Colab (Recommended)
 
@@ -180,11 +180,11 @@ User Query --> Retriever (k=2-8, configurable)
 
 ```
 Modulo_16_17_18_v9/
-├── streamlit_app_v9.py                 # Main Streamlit application (969 lines)
+├── streamlit_app.py                 # Main Streamlit application (969 lines)
 ├── uabc_logo.png                       # UABC institutional logo
-├── Team1_project_15_16_17_18_v9.ipynb  # Jupyter notebook (RAG pipeline + evaluation)
-├── requirements_v9.txt                 # Python dependencies
-├── README_v9.md                        # This file
+├── Team1_Module18_CapstoneProject.ipynb  # Jupyter notebook (RAG pipeline + evaluation)
+├── requirements.txt                 # Python dependencies
+├── README.md                        # This file
 ├── CHANGELOG.md                        # Version history with detailed changes
 ├── LICENSE                             # MIT License
 └── .gitignore                          # Git ignore rules
